@@ -171,7 +171,7 @@ class programadores extends ConexionMysql{
         parent::crearConexion();
         if(parent::ejecutarQuery($this->query)){
             $this->query = "DELETE FROM PROGRAMADOR WHERE NUM_IDENTIFICACION = ".$this->num_ide;
-            unlink($_GET["ruta"]); //Borra la imagen del servidor
+            unlink($_GET["ruta"]); //Borra el documento del servidor
             if(!parent::ejecutarQuery($this->query)){
                 parent::cerrarConexion();
                 return false;
@@ -224,7 +224,7 @@ class programadores extends ConexionMysql{
         parent::crearConexion();
         if(parent::ejecutarQuery($this->query)){
             if(!empty($this->archivo)){
-                unlink($_GET["ruta"]); //Borra la imagen del servidor
+                unlink($_GET["ruta"]); //Borra el documento del servidor
                 $this->update_archivo = ", DSC_ARCHIVO = '".$this->archivo."'";
             }
 
