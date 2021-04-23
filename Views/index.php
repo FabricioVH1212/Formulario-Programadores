@@ -33,7 +33,7 @@
                         </thead>
                         <tbody>
                         <?php
-                        include("../Models/CRUD.php");
+                        include("../Controllers/CRUD.php");
                         $adm = new programadores();
                         $null = true; 
                         if(isset($_GET["delete"])){
