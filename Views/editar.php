@@ -23,7 +23,7 @@
             <div class="tabla panel-body bg-dark">
                 <a  href = "index.php" class = "btn btn-warning "><i class="fa fa-arrow-circle-left col-lg " aria-hidden="true"></i></a>
                   <?php
-            include("../Models/CRUD.php");
+            include("../Controllers/CRUD.php");
             $editarProgramador = new programadores();
             $editarProgramador->set_num_ide($_GET["identificacion"]);
 
