@@ -193,7 +193,8 @@
                     <div class="col-md-12"><hr> 
                 <?php
                     //validaciones del numero de identificacion
-                    include("../Models/CRUD.php");
+                    include("../Controllers/CRUD.php");
+                    
                     $programadores = new programadores();
 
                     $programadores->set_num_ide($_POST["num_ide"]);
